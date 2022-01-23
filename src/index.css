@@ -10,3 +10,15 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
+
+/******************************************
+FONTS
+*******************************************/
+
+@font-face {
+  font-family: 'perrygot';
+  src: url('assets/fonts/perrygot-webfont.woff2') format('woff2'),
+       url('assets/fonts/perrygot-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
