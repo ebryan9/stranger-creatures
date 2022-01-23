@@ -6,7 +6,6 @@ function App() {
   return (
     <div className="container">
       <div className="row">
-        {/* <img src={eyesc} className="eyes" alt="logo" /> */}
         <div className="eyes"></div>
       </div>
     </div>
