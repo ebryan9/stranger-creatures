@@ -1,24 +1,414 @@
 @import "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css";
 
-.eyes {
+/* ==========================================================================
+   ************************** Custom Styles *********************************
+   ========================================================================== */
+  @font-face {
+  font-family: 'perrygot';
+  src: url('assets/fonts/perrygot-webfont.woff2') format('woff2'),
+        url('assets/fonts/perrygot-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+  
+
+/* ==========================================================================
+   Box Sizing
+   ========================================================================== */
+   *, 
+   *:before, 
+   *:after {
+     /* Chrome 9-, Safari 5-, iOS 4.2-, Android 3-, Blackberry 7- */
+     -webkit-box-sizing: border-box; 
+   
+     /* Firefox (desktop or Android) 28- */
+     -moz-box-sizing: border-box;
+   
+     /* Firefox 29+, IE 8+, Chrome 10+, Safari 5.1+, Opera 9.5+, iOS 5+, Opera Mini Anything, Blackberry 10+, Android 4+ */
+     box-sizing: border-box;
+   }
+   
+   
+   /* ==========================================================================
+      Explicit Resets
+      ========================================================================== */
+   ul, 
+   ol {
+       padding: 0;
+       margin: 0 0 0 20px;
+   }
+   
+   h1, h2, h3, h4, h5, h6, p {
+       margin: 0;
+       padding: 0;
+   }
+   
+   /* ==================================================
+      Basic Styles
+   ================================================== */
+   
+   html, body {
+       height: 100%;
+   }
+   
+   body{
+       background-color: #000;
+       color: #fff;
+       font-weight: 300;
+       font-size: 14px;
+       font-family: 'perrygot', sans-serif;
+       line-height: 24px;
+       -webkit-font-smoothing: antialiased;
+   }
+   
+   
+   a{
+       color: #8097ab;;
+       text-decoration: none;
+       cursor: pointer;
+       -webkit-transition: color 0.1s linear 0s;    
+       -moz-transition: color 0.1s linear 0s;
+       -o-transition: color 0.1s linear 0s;
+       transition: color 0.1s linear 0s;
+   }
+   
+   a:hover,
+   a:active,
+   a:focus{
+       outline: 0;
+       color: #1b9fc8;
+       text-decoration:none;
+   }
+   
+   a img {
+       border: none;
+   }
+   
+   a > img {
+       vertical-align: bottom;    
+   }
+   
+   img {
+       max-width: 100%;    
+   }
+   
+   
+   strong {
+         font-weight: bold;
+   }
+   
+   .light{
+       font-weight: 100;
+   }
+   
+   p {
+       font-size: 14px;
+       line-height: 24px;
+       margin: 0 0 30px;
+   }
+
+/* ==========================================================================
+   General
+   ========================================================================== */
+
+.site-bg {
   position: fixed; 
   top: 0; 
   left: 0; 
   min-width: 100%;
   min-height: 100%;
-  background: url(assets/img/eyesc.gif);
+  background: url(assets/img/bg/site-bg.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
-/******************************************
-FONTS
-*******************************************/
+.brick-bg {
+  position: relative;
+  padding: 20px;
+  min-height: 230px;
+  padding: 85px;
+  background: url(assets/img/bg/brick-bg.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
 
-@font-face {
-  font-family: 'perrygot';
-  src: url('assets/fonts/perrygot-webfont.woff2') format('woff2'),
-       url('assets/fonts/perrygot-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+/* ==========================================================================
+   Special Classes
+   ========================================================================== */
+.clear {
+  clear:both;
+}
+
+.frame {
+    width: 100%;
+    margin: 0 auto 0;
+}
+
+.reset {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.relative {
+    position: relative;
+}
+
+.col{
+    float: left;
+}
+
+.section{
+    width: 100%;
+    height: 100%;
+    padding: 25px 0;
+}
+
+.top-15{
+	margin-top: 15px;
+}
+
+.top-20{
+	margin-top: 20px;
+}
+
+.top-40{
+	margin-top: 40px;
+}
+
+.top-50{
+	margin-top: 50px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.error {
+	color: red;
+}
+
+.center-block {
+	display: block;
+	margin: 0;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin: 0 0 20px 0;
+    color: #9b3637;
+    font-weight: 300;
+    font-family: 'perrygot', sans-serif;
+    line-height: 1.1;
+}
+
+h1,
+.huge{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.big{
+    margin-bottom: 35px;
+    font-size: 36px;
+    font-family: 'perrygot', sans-serif;
+    font-weight: 700;
+    line-height: 1;
+}
+
+h2{
+  font-size: 36px;
+	line-height: 1;
+}
+
+
+.large{
+    font-size: 19px;
+    font-weight: 100;
+}
+
+h3{
+    font-size: 24px;
+}
+
+h4{
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 35px;
+}
+
+.p-medium{
+    font-size: 20px;
+}
+
+h5,
+.medium{
+    font-size: 18px;
+}
+
+h6,
+.regular{
+    font-size: 16px;
+}
+
+.small{
+    font-size: 14px;
+}
+
+.strong{
+    font-weight: bold;
+}
+
+.semi-bold{
+    font-weight: 600;
+}
+
+.light-weight{
+    font-weight: 300;
+}
+
+
+/***** Font Colors *****/
+
+.green{
+    color: #9ed47d;
+}
+
+.dark-blue{
+    color: #3c4e6d; /* main logo color */
+}
+
+.blue{
+    color: #607693;
+}
+
+.light-blue{
+    color: #8097ab;
+}
+
+.sky-blue{
+    color: #e8f4fa;
+}
+
+.orange{
+    color: #f35d0c;
+}
+
+.white{
+    color: #fff;
+}
+
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+   .btn-default {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    background-color: #322633;
+    color: #9b3637;
+}
+
+
+.btn-default:hover,
+.btn-default:active,
+.btn-default:focus{
+    background-color: #9b3637;
+    color: #322633;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 10;
+  }
+
+/* ==========================================================================
+   Home
+   ========================================================================== */
+
+/* .welcome,
+.character {
+  position: relative;
+  padding: 20px;
+  min-height: 230px;
+  padding: 85px;
+  background: url(assets/img/brick-bg.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+} */
+
+.welcome {
+  margin: 150px 0;
+}
+
+.character.brick-bg {
+  padding: 30px 20px 20px;
+}
+
+.character h3 {
+  width: 116px;
+  margin: 0 auto 20px;
+  text-indent: -9999px;
+}
+
+.humans,
+.vampires,
+.werewolves,
+.blood {
+  display: block;
+  width: 116px;
+  height: 24px;
+	margin: 0 auto 0;
+  background: url(assets/img/titles/humans.png) center center no-repeat transparent;
+  background-size: 116px 24px;
+}
+
+.vampires {
+  background: url(assets/img/titles/vampires.png) center center no-repeat transparent;
+  background-size: 116px 24px;
+}
+
+.werewolves {
+  background: url(assets/img/titles/werewolfs.png) center center no-repeat transparent;
+  background-size: 116px 24px;
+}
+
+.blood {
+  background: url(assets/img/titles/blood.png) center center no-repeat transparent;
+  background-size: 116px 24px;
 }
