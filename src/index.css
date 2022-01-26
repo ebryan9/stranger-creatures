@@ -293,30 +293,6 @@ h6,
 
 /***** Font Colors *****/
 
-.green{
-    color: #9ed47d;
-}
-
-.dark-blue{
-    color: #3c4e6d; /* main logo color */
-}
-
-.blue{
-    color: #607693;
-}
-
-.light-blue{
-    color: #8097ab;
-}
-
-.sky-blue{
-    color: #e8f4fa;
-}
-
-.orange{
-    color: #f35d0c;
-}
-
 .white{
     color: #fff;
 }
@@ -348,13 +324,18 @@ h6,
    Header
    ========================================================================== */
   .header {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100px;
     z-index: 10;
   }
+
+  .btn-blood {
+      float: right;
+  }
+
 
 /* ==========================================================================
    Home
@@ -411,4 +392,28 @@ h6,
 .blood {
   background: url(assets/img/titles/blood.png) center center no-repeat transparent;
   background-size: 116px 24px;
+}
+
+.game-human {
+    max-width: 300px;
+    max-height: 300px
+}
+
+@media only screen and (max-width: 600px) {
+    .btn-blood,
+    .btn-whitepaper {
+        float: none;
+        display: block;
+        width: 50%;
+        margin: 10px auto 0;
+    }
+
+    .btn-whitepaper {
+        margin-top: -30px;
+    }
+    
+    .game-human {
+        max-width: 250px;
+        max-height: 250px
+    }
 }

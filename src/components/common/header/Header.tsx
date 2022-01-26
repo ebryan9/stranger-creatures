@@ -9,10 +9,10 @@ function Header() {
                         <div className="col-md-12">
                             <div className="nav row">
                                 <div className="justify-content-start col-md-6">
-                                    <input type="button" className="btn-default" value="Whitepaper" />
+                                    <input type="button" className="btn-default btn-whitepaper" value="Whitepaper" />
                                 </div>
                                 <div className="justify-content-end col-md-6">
-                                    <input type="button" className="btn-default" value="Buy $Blood" style={{float: "right"}} />
+                                    <input type="button" className="btn-default btn-blood" value="Buy $Blood" />
                                 </div>
                             </div>
                         </div>
