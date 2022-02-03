@@ -13,9 +13,10 @@ function App() {
         <div className="row">
           <SiteBg />
           <div>
-            <Link to="/home">
+            {/* <Link to="/home">
               <img src={enter} className="centered" alt="Enter the Castle" style={{maxWidth: "450px", maxHeight: "450px" }}/>
-            </Link>
+            </Link> */}
+              <img src={enter} className="centered" alt="Enter the Castle" style={{maxWidth: "450px", maxHeight: "450px" }}/>
           </div>
         </div>
       </div>
