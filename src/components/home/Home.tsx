@@ -4,6 +4,8 @@ import SiteBg from '../common/SiteBg/SiteBg';
 import human from '../../assets/img/characters/humant.gif';
 import vampire from '../../assets/img/characters/vampiret.gif';
 import werewolf from '../../assets/img/characters/werewolft.gif';
+import blood from '../../assets/img/characters/bloodt.png';
+
 import { Link } from 'react-router-dom';
 
 function Home() {
@@ -76,6 +78,7 @@ function Home() {
                             <h3 className="text-center">
                                 <span className="blood">$BLOOD</span>
                             </h3>
+                            <img src={blood} alt="Blood" />
                         </div>
                     </div>
                 </div>

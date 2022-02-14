@@ -5,6 +5,9 @@ import enter from './assets/img/enter-the-castle.png';
 import Home from './components/home/Home';
 import Game from './components/game/Game';
 import SiteBg from './components/common/SiteBg/SiteBg';
+import Mint from './components/mint/Mint';
+import Stake from './components/stake/Stake';
+import Whitepaper from './components/whitepaper/Whitepaper';
 
 function App() {
   return (
@@ -13,10 +16,10 @@ function App() {
         <div className="row">
           <SiteBg />
           <div>
-            {/* <Link to="/home">
+            <Link to="/home">
               <img src={enter} className="centered" alt="Enter the Castle" style={{maxWidth: "450px", maxHeight: "450px" }}/>
-            </Link> */}
-              <img src={enter} className="centered" alt="Enter the Castle" style={{maxWidth: "450px", maxHeight: "450px" }}/>
+            </Link>
+              {/* <img src={enter} className="centered" alt="Enter the Castle" style={{maxWidth: "450px", maxHeight: "450px" }}/> */}
           </div>
         </div>
       </div>
@@ -24,6 +27,9 @@ function App() {
       <Routes>
         <Route path="/home" element={<Home />} />
         <Route path="/game" element={<Game />} />
+        <Route path="/mint" element={<Mint />} />
+        <Route path="/stake" element={<Stake />} />
+        <Route path="/whitepaper" element={<Whitepaper />} />
         {/* <Route path="*" element={<NotFound/>}/> */}
       </Routes>
     </>
