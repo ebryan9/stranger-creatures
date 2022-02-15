@@ -38,7 +38,7 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="row characters">
+                <div className="row characters mb-5">
                     <div className="row mb-1">
                         <div className="col-12">
                             <div className="character transparent-bg">
