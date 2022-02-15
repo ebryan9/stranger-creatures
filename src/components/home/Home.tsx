@@ -4,7 +4,7 @@ import SiteBg from '../common/SiteBg/SiteBg';
 import human from '../../assets/img/characters/humant.gif';
 import vampire from '../../assets/img/characters/vampiret.gif';
 import werewolf from '../../assets/img/characters/werewolft.gif';
-import blood from '../../assets/img/characters/bloodt.png';
+import blood from '../../assets/img/characters/tokenGIFx10.gif';
 
 import { Link } from 'react-router-dom';
 
@@ -20,28 +20,18 @@ function Home() {
                     <div className="col-md-12">
                         <div className="welcome brick-bg">
                             <div className="row">
-                                <div className="col-md-4 p-4">
-                                    <p>Sample text</p>
-                                </div>
-                                <div className="col-md-4">
+                                <div className="col-md-4 mx-auto">
                                     <h1 className="text-center">Welcome</h1>
                                     <img src={human} alt="Human" />
-                                </div>
-                                <div className="col-md-4 p-4">
-                                    <p>Sample text</p>
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="col-md-12">
-                                    <p className="text-center white mt-4">
-                                        Use $BLOOD to get more characters
-                                    </p>
-
                                     <Link
                                         to="/game" 
-                                        className="btn-default text-center" 
-                                        style={{display: "block", width: "300px", margin: "0 auto"}}>
-                                            Get Started
+                                        className="btn-default text-center mt-4 px-3 py-3" 
+                                        style={{display: "block", width: "300px", margin: "0 auto", fontSize: "20px"}}>
+                                            Let's Hunt
                                     </Link>
                                 </div>
                             </div>
@@ -49,6 +39,15 @@ function Home() {
                     </div>
                 </div>
                 <div className="row characters">
+                    <div className="row mb-1">
+                        <div className="col-12">
+                            <div className="character transparent-bg">
+                                <h3 className="text-center faction-title">
+                                    <span className="factions">Factions</span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
                     <div className="col-md-3">
                         <div className="character brick-bg">
                             <h3 className="text-center">

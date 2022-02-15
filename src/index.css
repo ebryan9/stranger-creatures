@@ -5,8 +5,8 @@
    ========================================================================== */
   @font-face {
   font-family: 'perrygot';
-  src: url('assets/fonts/perrygot-webfont.woff2') format('woff2'),
-        url('assets/fonts/perrygot-webfont.woff') format('woff');
+  src: url('assets/fonts/perrygot_3-webfont.woff2') format('woff2'),
+        url('assets/fonts/perrygot_3-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -124,10 +124,9 @@
 
 .brick-bg {
   position: relative;
-  padding: 20px;
   min-height: 230px;
   padding: 85px;
-  background: url(assets/img/bg/brick-bg.png);
+  background: url(assets/img/bg/Border2WChainsx10.png);
   background-position: center top;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -135,10 +134,19 @@
 
 .scroll-bg {
     position: relative;
-    padding: 20px;
     min-height: 230px;
     padding: 85px;
     background: url(assets/img/bg/Scrollx10.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.transparent-bg {
+    position: relative;
+    min-height: 50px;
+    padding: 25px;
+    background: transparent;
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -234,6 +242,7 @@ h6{
     font-weight: 300;
     font-family: 'perrygot', sans-serif;
     line-height: 1.1;
+    text-shadow: 2px 2px 2px #322633;
 }
 
 h1,
@@ -312,7 +321,7 @@ h6,
    Buttons
    ========================================================================== */
 
-   .btn-default {
+.btn-default {
     display: inline-block;
     *display: inline;
     zoom: 1;
@@ -349,8 +358,29 @@ h6,
 
 .strange-nav .link-secondary {
     color: #9b3637 !important;
+    text-indent: -9999px;
 }
 
+.home,
+.mint,
+.stake {
+  display: block;
+  width: 86px;
+  height: 40px;
+  margin: 0 auto 0;
+  background: url(assets/img/titles/Home.png) center center no-repeat transparent;
+  background-size: 86px 40px;
+}
+
+.mint {
+    background: url(assets/img/titles/Mint.png) center center no-repeat transparent;
+    background-size: 86px 40px;
+}
+
+.stake {
+    background: url(assets/img/titles/stake.png) center center no-repeat transparent;
+    background-size: 86px 40px;
+}
 /* ==========================================================================
    Home
    ========================================================================== */
@@ -375,10 +405,15 @@ h6,
   padding: 30px 20px 20px;
 }
 
-.character h3 {
+.character h3,
+.character h3.faction-title {
   width: 116px;
   margin: 0 auto 20px;
   text-indent: -9999px;
+}
+
+.character h3.faction-title {
+    width: 232px;
 }
 
 .humans,
@@ -388,7 +423,7 @@ h6,
   display: block;
   width: 116px;
   height: 24px;
-	margin: 0 auto 0;
+  margin: 0 auto 0;
   background: url(assets/img/titles/humans.png) center center no-repeat transparent;
   background-size: 116px 24px;
 }
@@ -408,6 +443,15 @@ h6,
   background-size: 116px 24px;
 }
 
+.factions {
+    display: block;
+    width: 232px;
+    height: 48px;
+    margin: 0 auto 0;  
+    background: url(assets/img/titles/factions.png) center center no-repeat transparent;
+    background-size: 232px 48px;
+}
+
 .game-human {
     max-width: 300px;
     max-height: 300px
@@ -420,7 +464,7 @@ h6,
    .nft-container {
        width: 100%;
        padding: 20px 20px 0;
-       background-color: #000;
+       background-color: transparent;
    }
 
    .nft img {
@@ -437,6 +481,22 @@ h6,
    .progress-bar {
        background-color: #9b3637 !important;
    }
+
+
+.mint-title-container {
+  width: 142px;
+  margin: 0 auto 20px;
+  text-indent: -9999px;
+}
+
+.mint-title {
+  display: block;
+  width: 142px;
+  height: 75px;
+  margin: 0 auto 0;
+  background: url(assets/img/titles/Mint.png) center center no-repeat transparent;
+  background-size: 142px 75px;
+}
 
 
 /* ==========================================================================

@@ -8,7 +8,7 @@ import werewolf from '../../assets/img/characters/werewolf.png';
 
 function Stake () {
 
-    const [stake, setStake]= useState(true);
+    const [stake, setStake] = useState(true);
 
     const toggleStake = () => {
         setStake(!stake);
@@ -29,12 +29,12 @@ function Stake () {
                                     <div className="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
                                         <h4 className="text-center white">Staked - 6</h4>
                                     </div>
-
                                     <div className="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
                                         <h4 className="text-center white">Unstaked - 0</h4>
                                     </div>
-
                                     <div className="col-md-3 text-end">
+                                    {stake
+                                        ?
                                          <div className="mb-5">
                                                 <button 
                                                     type="button" 
@@ -47,7 +47,7 @@ function Stake () {
                                                         Unstake
                                                 </button>
                                             </div>
-                                            
+                                        :
                                             <div className="mb-5">
                                                 <button 
                                                     type="button" 
@@ -55,14 +55,14 @@ function Stake () {
                                                     onClick={toggleStake}>Stake
                                                 </button>
                                             </div>
-
+                                        }
                                     </div>
                                 </div>                            
                             </div>
 
                             <div className="row mb-5">
                                 <div className="col-12">
-                                    <h4 className="white">Humans - 1</h4>
+                                    <h3>Humans - 1</h3>
 
                                     <div className="nft-container row align-items-start">
                                         <div className="nft col">
@@ -75,7 +75,7 @@ function Stake () {
 
                             <div className="row mb-5">
                                 <div className="col-12">
-                                    <h4 className="white">Vampires - 1</h4>
+                                    <h3>Vampires - 1</h3>
                                     <div className="nft-container row align-items-start">
                                         <div className="nft col">
                                             <img src={vampire} alt="Vampire" />
@@ -86,7 +86,7 @@ function Stake () {
 
                             <div className="row mb-5">
                                 <div className="col-12">
-                                    <h4 className="white">Werewolfs - 4</h4>
+                                    <h3>Werewolfs - 4</h3>
                                     <div className="nft-container row align-items-start">
                                         <div className="nft col">
                                             <img src={werewolf} alt="Werewolf" />
@@ -171,8 +171,11 @@ function Stake () {
                                             </div> 
                                         </div>
                                     </div>
-                                    <div className="col-md-3">
-                                        <p className="text-md-end mt-5 me-3">23:59:59 (cooldown)</p>
+                                    <div className="col-md-3 text-md-end">
+                                        <button 
+                                            type="button" 
+                                            className="btn btn-default me-2 mt-4">Attack
+                                        </button>
                                     </div>
                                 </div>
                             </div>

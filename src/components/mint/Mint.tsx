@@ -40,9 +40,11 @@ function Mint () {
                         <div className="welcome brick-bg">
                             <div className="row">
                                 <div className="px-4 pt-1 pb-4 mt-1 mb-4 text-center">
-                                    <h1 className="display-5 fw-bold">Mint</h1>
+                                    <h1 className="display-5 fw-bold mint-title-container">
+                                        <span className="mint-title">Mint</span>
+                                    </h1>
                                     <Link to="/home">
-                                        <img className="d-block mx-auto mb-4" src={human} alt="Human" width="288" height="228" />
+                                        <img className="d-block mx-auto mb-4" src={human} alt="Human" width="299" height="299" />
                                     </Link>
                                     
                                     <div className="col-lg-6 mx-auto">
