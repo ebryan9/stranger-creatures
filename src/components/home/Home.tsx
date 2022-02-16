@@ -21,7 +21,11 @@ function Home() {
                         <div className="welcome brick-bg">
                             <div className="row">
                                 <div className="col-md-4 mx-auto">
-                                    <h1 className="text-center">Welcome</h1>
+                                    <h1 className="text-center welcome-title-container">
+                                        <span className="welcome-title">
+                                            Welcome
+                                        </span>
+                                    </h1>
                                     <img src={human} alt="Human" />
                                 </div>
                             </div>

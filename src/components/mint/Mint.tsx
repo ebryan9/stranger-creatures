@@ -5,6 +5,7 @@ import SiteBg from '../common/SiteBg/SiteBg';
 import { Link } from 'react-router-dom';
 
 import human from '../../assets/img/characters/humant.gif';
+import mintNow from '../../assets/img/titles/mintnow.png';
 
 function Mint () {
 
@@ -69,7 +70,9 @@ function Mint () {
                                             <p className="text-center fw-normal fs-5 mt-3">24.000 $BLOOD</p>
                                         </div>                   
                                         <div className="d-grid gap-2 d-sm-flex justify-content-sm-center mt-1">
-                                            <button type="button" className="btn-default btn-lg mt-2 py-3 px-4" style={{fontSize: "1.5rem"}}>Mint Now</button>
+                                            <Link to="/" className="btn-default btn-lg mt-3 py-3 px-4" style={{fontSize: "1.5rem"}}>
+                                                <img src={mintNow} alt="Mint Now" width="174" height="36" />
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>

@@ -4,6 +4,7 @@ import { faTwitter, faDiscord } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
 
 import whitepaper from '../../../assets/img/titles/whitepaper.png';
+import buy from '../../../assets/img/titles/buyblood.png';
 
 function Header() {
     return (
@@ -44,7 +45,9 @@ function Header() {
             </ul>
 
             <div className="col-md-3 text-end">
-                <input type="button" className="btn-default btn-blood" value="Buy $Blood" />
+                <a href="/" className="btn-default btn-blood">
+                    <img src={buy} alt="Buy Now" width="116" height="24" />
+                </a>
             </div>
         </div>
         </>
