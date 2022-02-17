@@ -363,7 +363,8 @@ h6,
 
 .home,
 .mint,
-.stake {
+.stake,
+.vault {
   display: block;
   width: 86px;
   height: 40px;
@@ -381,6 +382,12 @@ h6,
     background: url(assets/img/titles/stake.png) center center no-repeat transparent;
     background-size: 86px 40px;
 }
+
+.vault {
+    background: url(assets/img/titles/vault.png) center center no-repeat transparent;
+    background-size: 86px 40px;
+}
+
 /* ==========================================================================
    Home
    ========================================================================== */
@@ -595,11 +602,33 @@ h6,
     background-size: 105px 35px;
 }
 
+/* ==========================================================================
+   Vault
+   ========================================================================== */
+   .pool-title {
+    width: 149px;
+    margin: 0 auto 20px;
+    text-indent: -9999px;
+  }
+  
+.avax-title,
+.usdc-title {
+    display: block;
+    width: 149px;
+    height: 32px;
+    background: url(assets/img/titles/avaxpool.png);
+    background-size: 149px 32px;  
+}
+
+.usdc-title {
+    background: url(assets/img/titles/USDCpool.png);
+    background-size: 149px 32px;  
+}
+
 
 /* ==========================================================================
    Whitepaper
    ========================================================================== */
-
 
 @media only screen and (max-width: 768px) {
     .header {

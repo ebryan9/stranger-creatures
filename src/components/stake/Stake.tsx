@@ -9,7 +9,8 @@ import WerewolfAttack from './werewolf-attack/WerewolfAttack';
 
 import stakeTitle from '../../assets/img/titles/stake.png';
 import claim from '../../assets/img/titles/claim.png';
-import unstaked from '../../assets/img/titles/unstaked.png';
+import unstakeTitle from '../../assets/img/titles/unstake.png';
+import selectAll from '../../assets/img/titles/selectall.png';
 
 function Stake () {
 
@@ -54,7 +55,7 @@ function Stake () {
                                                     type="button" 
                                                     className="btn btn-default"
                                                     onClick={toggleStake}>
-                                                        <img src={unstaked} alt="Unstake" width="98" height="31" />
+                                                        <img src={unstakeTitle} alt="Unstake" width="98" height="31" />
                                                 </button>
                                             </div>
                                         :
@@ -73,10 +74,24 @@ function Stake () {
 
                             <div className="row mb-5">
                                 <div className="col-12">
-                                    <h3 className="stake-faction-title">
-                                        <span className="hstake-title"></span> 
-                                        <span className="nft-count">- 1</span>
-                                    </h3>
+                                <div className="row">
+                                        <div className="col-md-6">
+                                            <h3 className="stake-faction-title">
+                                                <span className="hstake-title"></span>
+                                                <span className="nft-count">- 1</span>
+                                            </h3>
+                                        </div>
+                                        <div className="col-md-6 text-end">
+                                            <a href="/">
+                                                <img 
+                                                    src={selectAll} 
+                                                    alt="Select All" 
+                                                    width="116" 
+                                                    height="24" 
+                                                    className="mt-2" />
+                                            </a>
+                                        </div>
+                                    </div>
 
                                     <div className="nft-container row align-items-start">
                                         <div className="nft col">
@@ -89,10 +104,24 @@ function Stake () {
 
                             <div className="row mb-5">
                                 <div className="col-12">
-                                    <h3 className="stake-faction-title">
-                                        <span className="vstake-title"></span>
-                                        <span className="nft-count">- 1</span>
-                                    </h3>
+                                    <div className="row">
+                                        <div className="col-md-6">
+                                            <h3 className="stake-faction-title">
+                                                <span className="vstake-title"></span>
+                                                <span className="nft-count">- 1</span>
+                                            </h3>
+                                        </div>
+                                        <div className="col-md-6 text-end">
+                                            <a href="/">
+                                                <img 
+                                                    src={selectAll} 
+                                                    alt="Select All" 
+                                                    width="116" 
+                                                    height="24" 
+                                                    className="mt-2" />
+                                            </a>
+                                        </div>
+                                    </div>
                                     <div className="nft-container row align-items-start">
                                         <div className="nft col">
                                             <img src={vampire} alt="Vampire" />
@@ -103,10 +132,24 @@ function Stake () {
 
                             <div className="row mb-5">
                                 <div className="col-12">
-                                    <h3 className="stake-faction-title">
-                                        <span className="wstake-title"></span>
-                                        <span className="nft-count">- 4</span>
-                                    </h3>
+                                <div className="row">
+                                        <div className="col-md-6">
+                                            <h3 className="stake-faction-title">
+                                                <span className="wstake-title"></span>
+                                                <span className="nft-count">- 4</span>
+                                            </h3>
+                                        </div>
+                                        <div className="col-md-6 text-end">
+                                            <a href="/">
+                                                <img 
+                                                    src={selectAll} 
+                                                    alt="Select All" 
+                                                    width="116" 
+                                                    height="24" 
+                                                    className="mt-2" />
+                                            </a>
+                                        </div>
+                                    </div>
                                     <div className="nft-container row align-items-start">
                                         <div className="nft col">
                                             <img src={werewolf} alt="Werewolf" />

@@ -10,7 +10,7 @@ function Header() {
     return (
         <>
         <div className="header d-flex flex-wrap align-items-center justify-content-center justify-content-md-between px-5 py-3 mb-4">
-            <div className="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+            <div className="d-flex align-items-center col-md-2 mb-2 mb-md-0 text-dark text-decoration-none">
                 <Link to="/whitepaper" className="btn-default btn-whitepaper">
                     <img src={whitepaper} alt="Whitepaper" width="116" height="24" />
                 </Link>
@@ -33,6 +33,11 @@ function Header() {
                     </Link>
                 </li>
                 <li>
+                    <Link to="/vault" className="nav-link px-3 link-secondary">
+                        <span className="vault">Vault</span>
+                    </Link>
+                </li>
+                <li>
                     <a href="https://twitter.com/GameCreatures" className="nav-link px-3 link-secondary" style={{marginTop: "9px", fontSize: "24px"}} target="_blank" rel="noreferrer">
                         <FontAwesomeIcon icon={faTwitter} className="bi d-block mx-auto mb-1" width="24" height="24" />
                     </a>
@@ -44,7 +49,7 @@ function Header() {
                 </li>
             </ul>
 
-            <div className="col-md-3 text-end">
+            <div className="col-md-2 text-end">
                 <a href="/" className="btn-default btn-blood">
                     <img src={buy} alt="Buy Now" width="116" height="24" />
                 </a>

@@ -8,6 +8,7 @@ import SiteBg from './components/common/SiteBg/SiteBg';
 import Mint from './components/mint/Mint';
 import Stake from './components/stake/Stake';
 import Whitepaper from './components/whitepaper/Whitepaper';
+import Vault from './components/vault/Vault';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/game" element={<Game />} />
         <Route path="/mint" element={<Mint />} />
         <Route path="/stake" element={<Stake />} />
+        <Route path="/vault" element={<Vault />} />
         <Route path="/whitepaper" element={<Whitepaper />} />
         {/* <Route path="*" element={<NotFound/>}/> */}
       </Routes>

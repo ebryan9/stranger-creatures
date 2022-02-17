@@ -11,7 +11,7 @@ function Whitepaper () {
             <div className="container">
                 <SiteBg />
                 
-                <div className="row">
+                <div className="row whitepaper">
                     <div className="col-md-12">
                         <div className="welcome scroll-bg">
                             <div className="px-4 pt-1 pb-4 mt-1 mb-4" style={{color: "#000", fontSize: "20px", fontWeight: "bold"}}>
