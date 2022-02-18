@@ -1,57 +1,51 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faDiscord } from '@fortawesome/free-brands-svg-icons';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import PlayButton from '../PlayButton';
 import whitepaper from '../../../assets/img/titles/whitepaper.png';
 import buy from '../../../assets/img/titles/buyblood.png';
 
 
 function Header() {
-    const location = useLocation();
-    
-    const getPath = () => {
-        console.log("!!!!!!!! location ", location.pathname);
-        (window as any).dispatchEvent(new CustomEvent("pathChange", { detail: { location: location.pathname } }));
-    }
-    
+
     return (
         <>
         <div className="header d-flex flex-wrap align-items-center justify-content-center justify-content-md-between px-5 py-3 mb-4">
             <div className="d-flex align-items-center col-md-2 mb-2 mb-md-0 text-dark text-decoration-none">
-                <Link to="/whitepaper" 
+                <Link to="/whitepaper"
                     className="btn-default btn-whitepaper"
-                    onClick={getPath}>
+                    >
                     <img src={whitepaper} alt="Whitepaper" width="116" height="24" />
                 </Link>
             </div>
 
             <ul className="nav strange-nav col-12 col-md-auto mb-2 justify-content-center mb-md-0" style={{fontSize: "16px"}}>
                 <li>
-                    <Link to="/home" 
+                    <Link to="/home"
                     className="nav-link px-3 link-secondary"
-                    onClick={getPath}>
+                    >
                         <span className="home">Home</span>
                     </Link>
                 </li>
                 <li>
-                    <Link to="/mint" 
+                    <Link to="/mint"
                         className="nav-link px-3 link-secondary"
-                        onClick={getPath}>
+                        >
                         <span className="mint">Mint</span>
                     </Link>
                 </li>
                 <li>
-                    <Link to="/stake" 
+                    <Link to="/stake"
                         className="nav-link px-3 link-secondary"
-                        onClick={getPath}>
+                        >
                         <span className="stake">Stake</span>
                     </Link>
                 </li>
                 <li>
-                    <Link to="/vault" 
+                    <Link to="/vault"
                         className="nav-link px-3 link-secondary"
-                        onClick={getPath}>
+                        >
                         <span className="vault">Vault</span>
                     </Link>
                 </li>
