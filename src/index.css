@@ -142,6 +142,36 @@
     background-size: 100% 100%;
 }
 
+.top-scroll-bg {
+    position: relative;
+    min-height: 230px;
+    padding: 85px;
+    background: url(assets/img/bg/top-scroll.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.middle-scroll-bg {
+    position: relative;
+    min-height: 230px;
+    padding: 85px;
+    background: url(assets/img/bg/middle-scroll.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.bottom-scroll-bg {
+    position: relative;
+    min-height: 230px;
+    padding: 85px;
+    background: url(assets/img/bg/bottom-scroll.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
 .transparent-bg {
     position: relative;
     min-height: 50px;
@@ -406,6 +436,7 @@ h6,
 
 .welcome {
   margin: 150px 0 50px;
+  height: auto;
 }
 
 .welcome-title-container {

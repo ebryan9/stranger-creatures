@@ -2,9 +2,6 @@ import React from 'react';
 import Header from '../common/header/Header';
 import SiteBg from '../common/SiteBg/SiteBg';
 
-import avaxPool from '../../assets/img/titles/avaxpool.png';
-import usdcPool from '../../assets/img/titles/usdcpool.png';
-
 
 function Vault() {
     return(

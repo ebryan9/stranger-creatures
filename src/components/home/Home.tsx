@@ -5,14 +5,13 @@ import human from '../../assets/img/characters/humant.gif';
 import vampire from '../../assets/img/characters/vampiret.gif';
 import werewolf from '../../assets/img/characters/werewolft.gif';
 import blood from '../../assets/img/characters/tokenGIFx10.gif';
-
 import { Link } from 'react-router-dom';
 
 function Home() {
+
     return (
         <>
             <Header />
-
             <div className="container">
                 <SiteBg />
                 

@@ -13,10 +13,11 @@ function Whitepaper () {
                 
                 <div className="row whitepaper">
                     <div className="col-md-12">
-                        <div className="welcome scroll-bg">
+                        <div className="welcome scroll-bg relative">
                             <div className="px-4 pt-1 pb-4 mt-1 mb-4" style={{color: "#000", fontSize: "20px", fontWeight: "bold"}}>
-                                <div className="col-lg-8 mx-auto">
-                                    <h1 className="text-center my-3">Whitepaper</h1>
+                                <div className="col-lg-10 mx-auto">
+                                    <div>
+                                    <h1 className="text-center" style={{marginTop: "24rem", marginBottom: "3rem"}}>Whitepaper</h1>
 
                                     <div className="mt-5">
                                         <h2 className="text-center">Storytelling</h2>
@@ -36,7 +37,9 @@ function Whitepaper () {
                                         In exchange, the vampires protect them from the outside world and live in walled castles.
                                         Some humans who wanted to escape from the vampires' yoke fled beyond the castle walls, but it seems that strange wandering creatures, feared by the vampires themselves, roam the forests.
                                         </p>
+                                        </div>
 
+                                        <div>
                                         <h2 className="text-center">Summary</h2>
                                         <ul>
                                             <li><p>Only 10,000 Gen 0 can be minted using AVAX.
@@ -100,6 +103,9 @@ function Whitepaper () {
                                             <li><p>Unstake Vampire Receive all $BLOOD taxes accrued for the staked Vampire</p></li>
                                         </ul>
 
+                                        </div>
+
+                                        <div style={{marginBottom: "20rem"}}>
                                         <h3 className="mt-4">Werewolfs</h3>
 
 
@@ -124,7 +130,7 @@ function Whitepaper () {
                                         </ul>
 
 
-
+                                    </div>
 
 
 
