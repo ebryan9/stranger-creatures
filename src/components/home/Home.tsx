@@ -5,6 +5,8 @@ import human from '../../assets/img/characters/humant.gif';
 import vampire from '../../assets/img/characters/vampiret.gif';
 import werewolf from '../../assets/img/characters/werewolft.gif';
 import blood from '../../assets/img/characters/tokenGIFx10.gif';
+import hunt from '../../assets/img/titles/letshunt.png';
+
 import { Link } from 'react-router-dom';
 
 function Home() {
@@ -34,7 +36,7 @@ function Home() {
                                         to="/game" 
                                         className="btn-default text-center mt-4 px-3 py-3" 
                                         style={{display: "block", width: "300px", margin: "0 auto", fontSize: "20px"}}>
-                                            Let's Hunt
+                                            <img src={hunt} alt="Let's Hunt" width="159" height="39" />
                                     </Link>
                                 </div>
                             </div>
@@ -78,7 +80,7 @@ function Home() {
                     <div className="col-md-3">
                         <div className="character brick-bg">
                             <h3 className="text-center">
-                                <span className="blood">$BLOOD</span>
+                                <span className="blood"><em>$</em>BLOOD</span>
                             </h3>
                             <img src={blood} alt="Blood" />
                         </div>

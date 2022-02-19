@@ -25,6 +25,8 @@ function App() {
   return (
     <>
     <div className="container">
+      {hideBtn}
+
       <div className="row">
         <SiteBg />
 
@@ -35,9 +37,6 @@ function App() {
 
         </div>
       </div>
-
-      {hideBtn}
-
     </div>
       <Routes>
           <Route path="/home" element={<Home />} />

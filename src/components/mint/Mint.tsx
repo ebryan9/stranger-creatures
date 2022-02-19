@@ -63,11 +63,11 @@ function Mint () {
                                                         className="btn-default btn-lg" 
                                                         type="button" 
                                                         onClick={incNum}>
-                                                            {<span dangerouslySetInnerHTML={{__html: '&#x2b;'}} />}
+                                                            <span style={{fontFamily: "'Poppins', sans-serif"}}>+</span>
                                                     </button>
                                                 </div>
                                             </div>
-                                            <p className="text-center fw-normal fs-5 mt-3">24.000 $BLOOD</p>
+                                            <p className="text-center fw-normal fs-5 mt-3">24.000 <span style={{fontFamily: "'Poppins', sans-serif", fontSize: "26px"}}><em>$</em></span>BLOOD</p>
                                         </div>                   
                                         <div className="d-grid gap-2 d-sm-flex justify-content-sm-center mt-1">
                                             <Link to="/" className="btn-default btn-lg mt-3 py-3 px-4" style={{fontSize: "1.5rem"}}>

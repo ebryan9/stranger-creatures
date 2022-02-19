@@ -41,7 +41,7 @@ function WerewolfAttack() {
                                 </div>                                    
                             </div>
                             <div className="col-md-4 text-md-end mt-md-5">
-                                <p>40<span dangerouslySetInnerHTML={{__html: '&#37;'}} /> of success</p>
+                                <p>40<span style={{fontFamily: "'Poppins', sans-serif", fontSize: "18px"}}>%</span> of success</p>
                             </div> 
                         </div>
                     </div>
@@ -75,7 +75,7 @@ function WerewolfAttack() {
                                 </div>                                    
                             </div>
                             <div className="col-md-4 text-md-end mt-md-5">
-                                <p>60<span dangerouslySetInnerHTML={{__html: '&#37;'}} /> of success</p>
+                                <p>60<span style={{fontFamily: "'Poppins', sans-serif", fontSize: "18px"}}>%</span> of success</p>
                             </div> 
                         </div>
                     </div>
