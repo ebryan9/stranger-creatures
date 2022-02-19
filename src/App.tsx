@@ -19,7 +19,8 @@ function App() {
     location.pathname.includes("/home") || 
     location.pathname.includes("/mint") || 
     location.pathname.includes("/stake") || 
-    location.pathname.includes("/vault") || 
+    location.pathname.includes("/vault") ||
+    location.pathname.includes("/game") ||
     location.pathname.includes("/whitepaper") ? null : <LandingPlayButton />;
 
   return (
