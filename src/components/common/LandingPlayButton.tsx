@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlay, faPause, faVolumeUp, faVolumeMute } from '@fortawesome/free-solid-svg-icons'
+import { faVolumeUp, faVolumeMute } from '@fortawesome/free-solid-svg-icons'
 
 import audio from '../../assets/audio/start_strange.mp3';
 
