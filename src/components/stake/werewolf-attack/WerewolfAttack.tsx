@@ -9,11 +9,9 @@ function WerewolfAttack() {
             <div className="werewolf-attack-container">
                 <div className="row mt-5">
                     <div className="col-md-10 mx-auto">
-                        <h3 className="text-uppercase text-center">
-                            {/* <span className="wattack-title"></span> 
-                            <span className="attack-title"></span> */}
-                            Werewolf's Attack Interface
-                        </h3>
+                        <h4 className="text-uppercase text-center">
+                            <span className="wattack-title"></span> 
+                        </h4>
 
                     </div>
                 </div>

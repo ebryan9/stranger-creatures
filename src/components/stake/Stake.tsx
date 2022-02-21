@@ -10,6 +10,8 @@ import WerewolfAttack from './werewolf-attack/WerewolfAttack';
 import stakeTitle from '../../assets/img/titles/stake.png';
 import unstakeTitle from '../../assets/img/titles/claimunstake.png';
 import selectAll from '../../assets/img/titles/selectall.png';
+import staked from '../../assets/img/titles/staked.png';
+import unstaked from '../../assets/img/titles/unstaked.png';
 
 function Stake () {
 
@@ -32,14 +34,14 @@ function Stake () {
                             <div className="row">
                                 <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
                                     <div className="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none stake-count">
-                                        <h4 className="text-center">
-                                            <span className="stake-title">Staked</span> 6
-                                        </h4>
+                                        <button type="button" className="btn btn-default text-center">
+                                            <img src={staked} width="145" height="30" alt="Staked" /> - 6
+                                        </button>
                                     </div>
                                     <div className="col-12 col-md-auto mb-2 justify-content-center mb-md-0 stake-count">
-                                        <h4 className="text-center">
-                                            <span className="unstake-title">Unstaked</span> 0
-                                        </h4>
+                                        <button type="button" className="btn btn-default text-center">
+                                            <img src={unstaked} width="145" height="30" alt="Unstaked" /> - 0
+                                        </button>
                                     </div>
                                     <div className="col-md-4 text-end">
                                     {stake
@@ -76,14 +78,14 @@ function Stake () {
                                             </h3>
                                         </div>
                                         <div className="col-md-6 text-end">
-                                            <a href="/">
+                                            <button type="button" className="btn btn-default">
                                                 <img 
                                                     src={selectAll} 
                                                     alt="Select All" 
                                                     width="116" 
                                                     height="24" 
                                                     className="mt-2" />
-                                            </a>
+                                            </button>
                                         </div>
                                     </div>
 
@@ -106,14 +108,14 @@ function Stake () {
                                             </h3>
                                         </div>
                                         <div className="col-md-6 text-end">
-                                            <a href="/">
+                                            <button type="button" className="btn btn-default">
                                                 <img 
                                                     src={selectAll} 
                                                     alt="Select All" 
                                                     width="116" 
                                                     height="24" 
                                                     className="mt-2" />
-                                            </a>
+                                            </button>
                                         </div>
                                     </div>
                                     <div className="nft-container row align-items-start">
@@ -134,14 +136,14 @@ function Stake () {
                                             </h3>
                                         </div>
                                         <div className="col-md-6 text-end">
-                                            <a href="/">
+                                            <button type="button" className="btn btn-default">
                                                 <img 
                                                     src={selectAll} 
                                                     alt="Select All" 
                                                     width="116" 
                                                     height="24" 
                                                     className="mt-2" />
-                                            </a>
+                                            </button>
                                         </div>
                                     </div>
                                     <div className="nft-container row align-items-start">

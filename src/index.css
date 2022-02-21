@@ -442,7 +442,7 @@ h6,
 }
 
 .play-button-container {
-    position: fixed;
+    position: absolute;
     top: -26px;
     right: 22%;
     width: 50px;
@@ -582,10 +582,9 @@ h6,
   background-size: 142px 75px;
 }
 
-.stake-count h4 {
-  width: 145px;
-  margin: 0 auto 20px;
-  text-indent: -9999px;
+.stake-count button {
+  width: 250px;
+  margin: -25px auto 20px;
 }
 
 
@@ -643,17 +642,18 @@ h6,
 .werewolf-attack-container h4 {
     position: relative;
     width: 254;
-    height: 35px;
+    margin: 0 auto 20px;
+    text-indent: -9999px;
 }
 
 .wattack-title,
 .attack-title {
-    position: absolute;
-    top: 0;
-    width: 127px;
-    height: 31px;
-    background: url(assets/img/titles/werewolfs.png);
-    background-size: 127px 31px;
+    display: block;
+    margin: 0 auto;
+    width: 318px;
+    height: 44px;
+    background: url(assets/img/titles/werewolfsattack.svg);
+    background-size: 254px 35px;
 }
 
 .attack-title {
