@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useRef, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faDiscord } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
@@ -6,27 +6,47 @@ import PlayButton from '../PlayButton';
 import whitepaper from '../../../assets/img/titles/whitepaper.png';
 import buy from '../../../assets/img/titles/buyblood.png';
 
+// import audio from '../../../assets/audio/loops_strange.mp3';
+
 import { AudioContext } from "../../../state/AudioContext";
 
 function Header() {
 
-    const useAudio = useContext(AudioContext);
-    // const audioRef = useRef(new Audio(audio));
+    // const useAudio = useContext(AudioContext);
+    const audioRef = useRef(useContext(AudioContext));
     const [playing, setPlaying] = useState(false);
     
     const play = () => {
       setPlaying(true);
-      useAudio.play()
-      useAudio.loop = true;
+      audioRef.current.play()
+      audioRef.current.loop = true;
     };
   
     const pause = () => {
       setPlaying(false);
-      useAudio.pause();
-      useAudio.loop = true;
+      audioRef.current.pause();
+      audioRef.current.loop = false;
     };
   
+    // useEffect(() => {   
+    //     if (playing === false) {
+    //         audioRef.current.pause();
+    //     }     
+    //     setPlaying(true);
+    //     audioRef.current.play();
+    //     audioRef.current.loop = true;
 
+    // }, [])
+
+    useEffect(() => {
+        return () => {
+            setPlaying(false);
+            // eslint-disable-next-line react-hooks/exhaustive-deps
+            audioRef.current.pause()
+            console.log("in cleanup")
+        }
+    }, [])
+    
     return (
         <>
         <div className="header d-flex flex-wrap align-items-center justify-content-center justify-content-md-between px-5 py-3 mb-4">
