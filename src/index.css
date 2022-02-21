@@ -641,7 +641,7 @@ h6,
 
 .werewolf-attack-container h4 {
     position: relative;
-    width: 254;
+    width: 318px;
     margin: 0 auto 20px;
     text-indent: -9999px;
 }
@@ -653,7 +653,7 @@ h6,
     width: 318px;
     height: 44px;
     background: url(assets/img/titles/werewolfsattack.svg);
-    background-size: 254px 35px;
+    background-size: 318px 44px;
 }
 
 .attack-title {
