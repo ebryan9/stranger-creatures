@@ -113,8 +113,7 @@
    General
    ========================================================================== */
 
-.site-bg,
-.eyes-bg {
+.site-bg {
   position: fixed; 
   top: 0; 
   left: 0; 
@@ -132,10 +131,18 @@
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
-    background: url(assets/img/bg/pp_strange_creatures.png);
+    background: url(assets/img/bg/EyesBLx10.gif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+
+.game-container .site-bg {
+    display: none;
+}
+
+.hide-castle {
+    display: none;
 }
 
 .brick-bg {

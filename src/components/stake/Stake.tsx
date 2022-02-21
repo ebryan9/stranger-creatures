@@ -8,8 +8,7 @@ import werewolf from '../../assets/img/characters/werewolf.png';
 import WerewolfAttack from './werewolf-attack/WerewolfAttack';
 
 import stakeTitle from '../../assets/img/titles/stake.png';
-import claim from '../../assets/img/titles/claim.png';
-import unstakeTitle from '../../assets/img/titles/unstake.png';
+import unstakeTitle from '../../assets/img/titles/claimunstake.png';
 import selectAll from '../../assets/img/titles/selectall.png';
 
 function Stake () {
@@ -48,14 +47,9 @@ function Stake () {
                                          <div className="mb-5">
                                                 <button 
                                                     type="button" 
-                                                    className="btn btn-default me-2">
-                                                        <img src={claim} alt="Claim" width="68" height="31" />
-                                                </button>
-                                                <button 
-                                                    type="button" 
                                                     className="btn btn-default"
                                                     onClick={toggleStake}>
-                                                        <img src={unstakeTitle} alt="Unstake" width="98" height="31" />
+                                                        <img src={unstakeTitle} alt="Unstake" width="170" height="31" />
                                                 </button>
                                             </div>
                                         :

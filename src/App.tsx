@@ -12,7 +12,6 @@ import LandingPlayButton from './components/common/LandingPlayButton';
 import enter from './assets/img/enter-the-castle.png';
 import SiteBg from './components/common/SiteBg/SiteBg';
 
-
 function App() {
   const location = useLocation();
   const hideBtn = 
@@ -23,16 +22,21 @@ function App() {
     location.pathname.includes("/game") ||
     location.pathname.includes("/whitepaper") ? null : <LandingPlayButton />;
 
+    const hideSiteBg = 
+      location.pathname.includes("/game") ? null : <SiteBg />;
+
+
   return (
     <>
     <div className="container">
       {hideBtn}
 
       <div className="row">
-        <SiteBg />
+        {hideSiteBg}
 
         <div>
-          <Link to="/home">
+          
+          <Link to="/home" className={location.pathname.includes("/game") ? "hide-castle" : ""}> 
             <img src={enter} className="centered" alt="Enter the Castle" style={{maxWidth: "450px", maxHeight: "450px" }} />
           </Link>
 

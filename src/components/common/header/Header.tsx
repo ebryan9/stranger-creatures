@@ -6,6 +6,7 @@ import PlayButton from '../PlayButton';
 import whitepaper from '../../../assets/img/titles/whitepaper.png';
 import buy from '../../../assets/img/titles/buyblood.png';
 
+import { AudioProvider } from "../../../state/AudioContext";
 
 function Header() {
 
@@ -61,7 +62,9 @@ function Header() {
                 </li>
 
                 <li>
-                    <PlayButton />
+                    <AudioProvider>
+                        <PlayButton />
+                    </AudioProvider>
                 </li>
             </ul>
 

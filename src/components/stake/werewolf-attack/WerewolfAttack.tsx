@@ -8,11 +8,12 @@ function WerewolfAttack() {
         <>
             <div className="werewolf-attack-container">
                 <div className="row mt-5">
-                    <div className="col-md-4 mx-auto">
-                        <h4>
-                            <span className="wattack-title"></span> 
-                            <span className="attack-title"></span>
-                        </h4>
+                    <div className="col-md-10 mx-auto">
+                        <h3 className="text-uppercase text-center">
+                            {/* <span className="wattack-title"></span> 
+                            <span className="attack-title"></span> */}
+                            Werewolf's Attack Interface
+                        </h3>
 
                     </div>
                 </div>
@@ -23,7 +24,7 @@ function WerewolfAttack() {
                                 <img src={werewolf} className="img-thumbnail" alt="Werewolf" style={{width: "200px"}} />
                             </div>
                             <div className="col-md-5 mt-4">
-                                <p>Werewolf #2000</p>
+                                <p>Werewolf <span style={{fontFamily: "'Poppins', sans-serif", fontSize: "18px"}}><em>#</em></span> 2000</p>
                             </div>
                         </div>
                     </div>
@@ -57,7 +58,7 @@ function WerewolfAttack() {
                                 <img src={werewolf} className="img-thumbnail" alt="Werewolf" style={{width: "200px"}} />
                             </div>
                             <div className="col-md-5 mt-4">
-                                <p>Werewolf #100</p>
+                                <p>Werewolf <span style={{fontFamily: "'Poppins', sans-serif", fontSize: "18px"}}><em>#</em></span> 100</p>
                             </div>
                         </div>
                     </div>
