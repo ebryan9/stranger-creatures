@@ -2,31 +2,31 @@ import React, { useContext, useEffect, useRef, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faDiscord } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
-import PlayButton from '../PlayButton';
+// import PlayButton from '../PlayButton';
 import whitepaper from '../../../assets/img/titles/whitepaper.png';
 import buy from '../../../assets/img/titles/buyblood.png';
 
 // import audio from '../../../assets/audio/loops_strange.mp3';
 
-import { AudioContext } from "../../../state/AudioContext";
+// import { AudioContext } from "../../../state/AudioContext";
 
 function Header() {
 
     // const useAudio = useContext(AudioContext);
-    const audioRef = useRef(useContext(AudioContext));
-    const [playing, setPlaying] = useState(false);
+    // const audioRef = useRef(useContext(AudioContext));
+    // const [playing, setPlaying] = useState(false);
     
-    const play = () => {
-      setPlaying(true);
-      audioRef.current.play()
-      audioRef.current.loop = true;
-    };
+    // const play = () => {
+    //   setPlaying(true);
+    //   audioRef.current.play()
+    //   audioRef.current.loop = true;
+    // };
   
-    const pause = () => {
-      setPlaying(false);
-      audioRef.current.pause();
-      audioRef.current.loop = false;
-    };
+    // const pause = () => {
+    //   setPlaying(false);
+    //   audioRef.current.pause();
+    //   audioRef.current.loop = false;
+    // };
   
     // useEffect(() => {   
     //     if (playing === false) {
@@ -38,14 +38,14 @@ function Header() {
 
     // }, [])
 
-    useEffect(() => {
-        return () => {
-            setPlaying(false);
-            // eslint-disable-next-line react-hooks/exhaustive-deps
-            audioRef.current.pause()
-            console.log("in cleanup")
-        }
-    }, [])
+    // useEffect(() => {
+    //     return () => {
+    //         setPlaying(false);
+    //         // eslint-disable-next-line react-hooks/exhaustive-deps
+    //         audioRef.current.pause()
+    //         console.log("in cleanup")
+    //     }
+    // }, [])
     
     return (
         <>
@@ -98,9 +98,9 @@ function Header() {
                     </a>
                 </li>
 
-                <li>
+                {/* <li>
                     <PlayButton playing={playing} play={play} pause={pause}/>
-                </li>
+                </li> */}
             </ul>
 
             <div className="col-md-2 text-end">

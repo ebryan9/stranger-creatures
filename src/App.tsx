@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext, useRef, useState } from 'react';
 import { Link, Route, Routes, useLocation } from 'react-router-dom';
 
 import Home from './components/home/Home';
@@ -8,19 +8,40 @@ import Stake from './components/stake/Stake';
 import Whitepaper from './components/whitepaper/Whitepaper';
 import Vault from './components/vault/Vault';
 import LandingPlayButton from './components/common/LandingPlayButton';
+import PlayButton from './components/common/PlayButton';
 
 import enter from './assets/img/enter-the-castle.png';
 import SiteBg from './components/common/SiteBg/SiteBg';
 
+import { AudioContext } from "./state/AudioContext";
+
 function App() {
   const location = useLocation();
+
+  const audioRef = useRef(useContext(AudioContext));
+    const [playing, setPlaying] = useState(false);
+    
+    const play = () => {
+      setPlaying(true);
+      audioRef.current.play()
+      audioRef.current.loop = true;
+    };
+  
+    const pause = () => {
+      setPlaying(false);
+      audioRef.current.pause();
+      audioRef.current.loop = false;
+    };
+
   const hideBtn = 
     location.pathname.includes("/home") || 
     location.pathname.includes("/mint") || 
     location.pathname.includes("/stake") || 
     location.pathname.includes("/vault") ||
     location.pathname.includes("/game") ||
-    location.pathname.includes("/whitepaper") ? null : <LandingPlayButton />;
+    location.pathname.includes("/whitepaper") 
+    ? <PlayButton playing={playing} play={play} pause={pause}/> 
+    : <LandingPlayButton />;
 
     const hideSiteBg = 
       location.pathname.includes("/game") ? null : <SiteBg />;

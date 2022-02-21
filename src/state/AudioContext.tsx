@@ -4,7 +4,7 @@ import audio from '../assets/audio/loops_strange.mp3';
 const audioRef = new Audio(audio);
 
 export const initialValues = {
-    audio: audioRef,
+    sound: audioRef,
     play: () => {},
     pause: () => {}
 }

@@ -397,7 +397,7 @@ h6,
    Header
    ========================================================================== */
 .header {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -439,6 +439,14 @@ h6,
 .vault {
     background: url(assets/img/titles/vault.png) center center no-repeat transparent;
     background-size: 86px 40px;
+}
+
+.play-button-container {
+    position: fixed;
+    top: -26px;
+    right: 22%;
+    width: 50px;
+    z-index: 2000;
 }
 
 /* ==========================================================================
@@ -718,14 +726,22 @@ h6,
 @media only screen and (max-width: 768px) {
     .header {
         top: 20px;
-        margin-bottom: 60px;
+        margin-bottom: 200px !important;
+    }
+
+    .play-button-container {
+        position: fixed;
+        top: 70px;
+        right: 13%;
+        width: 50px;
+        z-index: 2000;
     }
 
     .btn-blood,
     .btn-whitepaper {
         float: none;
         display: block;
-        width: 250px;
+        max-width: 250px;
         margin: 10px auto 0;
     }
 
