@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faDiscord } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
@@ -6,9 +6,26 @@ import PlayButton from '../PlayButton';
 import whitepaper from '../../../assets/img/titles/whitepaper.png';
 import buy from '../../../assets/img/titles/buyblood.png';
 
-import { AudioProvider } from "../../../state/AudioContext";
+import { AudioContext } from "../../../state/AudioContext";
 
 function Header() {
+
+    const useAudio = useContext(AudioContext);
+    // const audioRef = useRef(new Audio(audio));
+    const [playing, setPlaying] = useState(false);
+    
+    const play = () => {
+      setPlaying(true);
+      useAudio.play()
+      useAudio.loop = true;
+    };
+  
+    const pause = () => {
+      setPlaying(false);
+      useAudio.pause();
+      useAudio.loop = true;
+    };
+  
 
     return (
         <>
@@ -62,9 +79,7 @@ function Header() {
                 </li>
 
                 <li>
-                    <AudioProvider>
-                        <PlayButton />
-                    </AudioProvider>
+                    <PlayButton playing={playing} play={play} pause={pause}/>
                 </li>
             </ul>
 
